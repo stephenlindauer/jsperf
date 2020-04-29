@@ -1,0 +1,15 @@
+<html>
+
+<script>
+sum=0;
+for (j=0; j<5; j++) {
+s = performance.now()
+for(var i=0; i<150000000; i++) {}
+t=(performance.now()-s);
+sum+=t;
+document.write("took: " + t + "ms<br />")
+}
+document.write("average: " + sum/5)
+</script>
+
+</html>
